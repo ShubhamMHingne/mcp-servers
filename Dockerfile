@@ -11,6 +11,7 @@ RUN --mount=type=cache,target=/root/.cache,id=uv \
     python -m pip install --no-cache-dir uv
 
 COPY requirements.txt /app/requirements.txt
+COPY README.docker.md /app/README.md
 
 # Use uv for faster dependency install with cache mount
 RUN --mount=type=cache,target=/root/.cache,id=uv \
