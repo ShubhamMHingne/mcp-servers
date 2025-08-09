@@ -1,0 +1,15 @@
+{
+    "servers": {
+        "maharashtra-holidays": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "shubhammh/maharashtra-holiday-mcp"
+            ],
+            "type": "stdio"
+        }
+    },
+    "inputs": []
+}
