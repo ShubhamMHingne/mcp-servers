@@ -1,0 +1,40 @@
+{
+	"servers": {
+		"time": {
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"mcp/time"
+			],
+			"type": "stdio"
+		},
+		"ShubhamMHMcpServer": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"D:/Study/Python/my_mcp_server.py"
+			]
+		},
+		"CalendarByShubhamMH": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"D:/Study/Python/holiday_calendar.py"
+			]
+		},
+		"maharashtra-holiday-mcp": {
+			"type": "stdio",
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"shubhammh/maharashtra-holiday-mcp"
+			],
+			"env": {}
+		}
+	},
+	"inputs": []
+}
